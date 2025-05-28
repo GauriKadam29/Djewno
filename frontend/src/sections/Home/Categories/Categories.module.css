@@ -1,0 +1,76 @@
+.categoriesContainer {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 26px;
+    padding: 25px 0;
+    /* padding-left: 40px; */
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0 40px;
+}
+
+.categoryCard {
+    width: 218px;
+    height: 218px;
+
+    /* height: 198px; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* .categoryCard:hover {
+    transform: scale(1.05);
+} */
+
+.categoryCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+.overlay {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    /* backdrop-filter: blur(5px); */
+    /* background: rgba(0, 0, 0, 0.5); */
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+.overlay h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.overlay p {
+    font-size: 10px;
+    margin: 0;
+    opacity: 0.8;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .categoriesContainer{
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 15px;
+    }
+    .categoryCard {
+        width: 140px;
+        height: 150px;
+    }
+}

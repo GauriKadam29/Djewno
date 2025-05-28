@@ -1,0 +1,73 @@
+.diamondSale{
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    padding: 25px 40px;
+    gap: 25px;
+    height: 42vh;
+}
+
+.diamondSale .diamondsForever{
+    background-image: url('./../../../assets/banner-5.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    width: 66%;
+    padding: 50px 40px;
+}
+
+.diamondSale .craftedBeauty{
+    background-image: url('./../../../assets/banner-6.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32%;
+    padding: 40px;
+
+}
+
+.diamondsForever h5, .craftedBeauty h5{
+    color: #868E96;
+    font-size: 10px;
+}
+.diamondsForever h3, .craftedBeauty h3{
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.diamondsForever p{
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+.diamondsForever h6{
+    /* color: white; */
+    border-bottom: 1px solid black;
+    width: 12%;
+    text-align: center;
+    /* margin-left: 32%; */
+    padding: 25px 0 5px;
+    font-size: 10px;
+}
+.craftedBeauty p{
+    font-size: 12px;
+    padding-top: 8px;
+    padding-right: 30%;
+}
+.craftedBeauty h6{
+     /* color: white; */
+     border-bottom: 1px solid black;
+     width: 28%;
+     text-align: center;
+     /* margin-left: 32%; */
+     padding: 25px 0 5px;
+     font-size: 10px;
+
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .diamondSale{
+        display: none;
+    }
+}

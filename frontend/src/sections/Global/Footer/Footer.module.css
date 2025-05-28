@@ -1,0 +1,165 @@
+.footer {
+    background-color: #F5F2EC;
+}
+
+.footer .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 65px 40px 85px;
+    /* border-bottom: 1px solid #f0f0f0; */
+    border-bottom: 2px solid #E2E3E3;
+    /* gap: 20px; */
+}
+
+.aboutDjewno {
+    width: 30%;
+    padding-right: 7%;
+    text-align: left;
+    /* background-color: red; */
+}
+
+.getToKnowUs {
+    width: 20%;
+    padding: 0 20px;
+    /* background-color: violet; */
+}
+
+.letUsHelpYou {
+    width: 20%;
+    padding: 0 20px;
+    /* background-color: aqua; */
+}
+
+.newsletter {
+    width: 30%;
+    padding-left: 20px;
+
+    /* background-color: brown; */
+}
+
+.footerContent h5 {
+    text-transform: uppercase;
+    padding-bottom: 28px;
+    font-size: 12px;
+}
+
+.footerContent .djew {
+    font-weight: 500;
+}
+
+.footerContent .offStore {
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+.aboutDjewno p {
+    font-size: 13px;
+    /* letter-spacing: 1px; */
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+
+.aboutDjewno .socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.getToKnowUs li {
+    font-size: 13px;
+    padding-bottom: 6px;
+}
+
+.letUsHelpYou li {
+    font-size: 13px;
+    padding-bottom: 6px;
+}
+
+.newsletter .subscribe {
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.newsletter input {
+    padding: 13px;
+    font-size: 11px;
+    width: 77%;
+    border: 1px solid rgb(211, 210, 210);
+}
+
+.newsletter button {
+    padding: 12px 10px;
+    background-color: #212529;
+    color: white;
+    margin-left: 8px;
+    width: 20%;
+    font-weight: 500;
+
+}
+
+.newsletter .terms {
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+.newsletter .terms span {
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.copyright .left p {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.copyright .left p span {
+    color: red;
+}
+
+.copyright .right {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .footer .footerContent {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 20px;
+    }
+    .aboutDjewno {
+        grid-column: span 2; /* Line 1: full width */
+        width: 100%;
+        padding: 0;
+      }
+      
+      .getToKnowUs,
+      .letUsHelpYou {
+        grid-column: span 1; /* Line 2: side by side */
+        width: 100%;
+        padding: 0;
+      }
+      
+      .newsletter {
+        grid-column: span 2; /* Line 3: full width */
+        width: 100%;
+        padding: 0;
+
+      }
+      .copyright {
+        flex-wrap: wrap;
+        height: 180px;
+        padding: 30px 18px;
+      }
+      .copyright .right{
+        flex-wrap: wrap;
+        height: 12px;
+      }
+}

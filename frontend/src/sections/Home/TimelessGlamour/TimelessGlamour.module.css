@@ -1,0 +1,51 @@
+.timelessGlamour{
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)),  url('./../../../assets/banner-3.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    /* width: 290px; */
+    width: 325px;
+    /* height: 412px; */
+    height: 450px;
+    border-bottom: 1px solid #f0f0f0;
+    color: white;
+    /* margin: 0 20px; */
+}
+.timelessGlamour h3{
+    padding-top: 8px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.timelessGlamour p{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 50px;
+    padding-top: 8px;
+    line-height: 18px;
+}
+.timelessGlamour h5{
+    color: white;
+    border-bottom: 1px solid white;
+    width: 32%;
+    text-align: center;
+    margin-left: 32%;
+    padding: 25px 0 5px;
+    font-size: 10px;
+}
+.timelessGlamour h6{
+    font-size: 11px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px)
+{
+     .timeless{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:20px 0;
+        /* height: 400vh; */
+        gap: 30px;
+        align-content: center;
+    }
+}

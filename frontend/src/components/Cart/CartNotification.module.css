@@ -1,0 +1,51 @@
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.viewCartBtn {
+    padding: 5px 10px;
+    background-color: #f36;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.viewCartBtn:hover {
+    background-color: #d12;
+}
+
+.notification .closeBtn {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,265 @@
+.head{
+    display: flex;
+    height: 50px;
+    padding: 0 40px;
+    margin: 20px 0;
+}
+.head .logo{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    gap: 32px;
+}
+.head .logo button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.head .searchBar{
+    display: flex;
+    background-color: #F1F3F5;
+    width: 76%;
+    position: relative;
+
+}
+.searchDropdown {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.searchItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.searchItem img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.searchItem:hover {
+    background-color: #f5f5f5;
+}
+
+.seeAll {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seeAll:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+.head .searchBar .searchIcon{
+    display: flex;
+    align-items: center;
+    background-color: #F1F3F5;
+    font-size: 22px;
+    padding: 0 12px;
+}
+.head .searchBar input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    
+    font-size: 12px;
+  
+}
+.head .searchBar input:focus {
+    outline: none;
+  border: none;
+}
+.head .logo img{
+    width: 71%;
+}
+.head .manageIcon{
+    display: flex;
+    width: 12%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+}
+.head .manageIcon p{
+    border: none;
+    font-size: 22px;
+    gap: 80px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px 18px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.header .midnightSales{
+    display: flex;
+
+}
+.header .navBar{
+    gap: 20px;
+}
+.header .navBar .nav{
+
+    gap: 20px;
+
+
+}
+.header .navBar .nav .navMenu a{
+    gap: 20px;
+    margin-right: 40px;
+    padding: 0;
+   
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+}
+
+.searchDropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    /* max-height: 200px; */
+    overflow-y: auto;
+    width: 100%;
+    top: 100%;
+    height: 50vh;
+    z-index: 100;
+}
+.searchDropdown p {
+    padding: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.searchDropdown button {
+    width: 100%;
+    padding: 10px;
+    background: #f8f9fa;
+    border: none;
+    cursor: pointer;
+}
+
+
+.manageIcon .dropdownMenu{
+    position: absolute;
+    /* top: 100%; */
+    top: 25%;
+    right: 8%;
+    width: 80px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    /* z-index: 1; */
+}
+.manageIcon .dropdownMenu button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+
+}
+
+.hideOnMobile {
+    display: inline;
+}
+
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+  
+  .offcanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: white;
+    padding: 1rem;
+    z-index: 100;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    animation: slideIn 0.3s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .closeBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .offcanvasNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  .offcanvasNav a {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  
+
+  
+  
+@media screen and (min-width:320px) and (max-width:480px){
+    .head .searchBar{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .hideOnMobile {
+        display: none !important;
+    }
+    .head .logo{
+        width: 100%;
+        gap: 30px;
+    }
+    .head{
+        padding: 0 20px;
+        margin: 0;
+        /* border-bottom: 1px solid #E5E5E5; */
+    }
+}

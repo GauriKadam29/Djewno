@@ -1,0 +1,139 @@
+/* .wishlistPage {
+    padding: 20px;
+    text-align: center;
+}
+
+.wishlistGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.wishlistItem {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background: #fff;
+}
+
+.wishlistItem img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price {
+    color: #ff5733;
+    font-size: 18px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: red;
+    margin-top: 10px;
+}
+
+.viewProduct {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+} */
+
+
+.wishlistContainer {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.emptyMessage {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+.wishlistTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wishlistTable th, .wishlistTable td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.productInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wishlistImg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.productName {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.stockStatus {
+    color: green;
+}
+
+.addToCartBtn {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.removeBtn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    .hideOnMobile {
+        display: none;
+    }
+    
+.productName {
+    font-size: 12px;
+    font-weight: 500;
+}
+.wishlistContainer{
+    width: 100%;
+}
+}

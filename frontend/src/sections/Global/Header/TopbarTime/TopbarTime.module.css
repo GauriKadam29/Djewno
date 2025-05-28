@@ -1,0 +1,114 @@
+.freeDelivery .notification{
+    display: flex;
+    background-color: #212529;
+    color: white;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 13px;
+    padding: 0.6rem 21%;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.freeDelivery .timer{
+    background-color: #FCE6DC;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+.freeDelivery .supportExpert{
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+    justify-content: space-between;
+    padding: 9px 40px;
+    align-items: center;
+}
+.freeDelivery .supportExpert .supportLeft{
+    display: flex;
+    text-transform: uppercase;
+    gap: 18px;
+    font-size: 11px;
+    font-weight:600;
+    color: black;
+}
+.freeDelivery .supportExpert .supportLeft p{
+    color: black;
+}
+.freeDelivery .supportExpert .supportRight{
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    font-weight:500;
+    text-transform: uppercase;
+    align-items: center;
+
+
+}
+.freeDelivery .supportExpert .supportRight p{
+    color: #535452;
+    font-weight: 400;
+}
+.freeDelivery .supportExpert .supportRight select{
+    border: none;
+    font-size: 11px;
+    font-weight: 600;
+    /* color: #57585a; */
+    background-color: none;
+
+
+}
+.freeDelivery .supportExpert .supportRight select option{
+    border-bottom: 1px solid black;
+    background-color: none;
+    color: black;
+}
+
+
+
+
+
+/* Mobile Responsive (Max-width: 767px) */
+/* @media (max-width: 767px) { */
+@media screen and (min-width:320px) and (max-width:480px){
+    .freeDelivery .notification {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 12px 10px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .freeDelivery .timer {
+        font-size: 12px;
+        padding: 12px 10px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .freeDelivery .supportExpert {
+        display: none;
+    }
+
+    /* .freeDelivery .supportExpert .supportLeft {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .freeDelivery .supportExpert .supportRight {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .freeDelivery .supportExpert .supportRight select {
+        font-size: 12px;
+        margin-top: 5px;
+    } */
+}

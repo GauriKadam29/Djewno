@@ -1,0 +1,92 @@
+.cartContainer {
+    width: 100%;
+    /* margin: auto; */
+    padding: 20px 40px;
+}
+
+.cartTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cartTable th, .cartTable td {
+    padding: 5px 12px;
+    /* border-bottom: 1px solid #ddd; */
+    text-align: left;
+}
+
+.productInfo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.wishlistImg {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.removeBtn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.productName {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.quantityBtn span{
+    border: 1px solid #ddd;
+    padding: 5px 8px;
+}
+.quantityBtn button{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.orderQualify{
+    width: 100%;
+    background-color: #EBFBEE;
+    color: #3BB150;
+    padding: 20px;
+    border: 1px solid #CFF7D4;
+}
+.orderQualify p{
+    font-size: 12px;
+    font-weight: 700;
+}
+.checkoutBtn{
+    width: 150px;
+    padding: 12px 0;
+    background-color: #FF5940;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.totalSection h3{
+    /* margin-bottom: 10px; */
+    margin: 20px 0;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .hideOnMobile {
+        display: none;
+    }
+    .productName {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .cartContainer {
+        padding:20px;
+    }
+}

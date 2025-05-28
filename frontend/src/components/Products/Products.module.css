@@ -1,0 +1,149 @@
+.productContainer{
+    display: flex;
+    padding: 0 40px;
+    gap: 4%;
+
+}
+.productSection{
+    width: 100%;
+    /* background-color: red; */
+}
+.productContainer .filterProduct{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(4,1fr); */
+    gap: 20px;
+
+
+}
+.productContainer .diamondsForever{
+    background-image: url('./../../assets/banner-5.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    width: 100%;
+    /* height: 250px; */
+    height: 270px;
+    margin-top: 60px;
+    padding: 50px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+    gap: 8px;
+}
+
+.pageItem {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background 0.3s, color 0.3s;
+}
+
+.pageItem:hover {
+    background: #f5f5f5;
+}
+
+.activePage {
+    background: #ff6347; /* Red color for active page */
+    color: white;
+    font-weight: bold;
+}
+
+.prevNext {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+.prevNext:hover {
+    background: #f5f5f5;
+}
+.sortingOptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+    /* padding: 10px 0; */
+}
+.filterProduct{
+    /* background-color: red; */
+    padding: 20px 0;
+}
+.noProducts {
+    text-align: center;
+    /* padding-left: 400px; */
+    width: 100%;
+    height: 300px;
+    padding-top: 12%;
+    /* background-color: red; */
+}
+.noProducts h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.noProducts p{
+    /* width: 40%; */
+    color: gray;
+    font-size: 14px;
+    border: 2px solid #f0f0f0;
+    margin: 0 32%;
+    padding: 15px;
+}
+
+.diamondsForever h5, .craftedBeauty h5{
+    color: #868E96;
+    font-size: 10px;
+}
+.diamondsForever h3, .craftedBeauty h3{
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.diamondsForever p{
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+.diamondsForever h6{
+    /* color: white; */
+    border-bottom: 1px solid black;
+    width: 11%;
+    text-align: center;
+    /* margin-left: 32%; */
+    padding: 25px 0 5px;
+    font-size: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .productContainer{
+        padding: 0 20px;
+        /* gap: 0; */
+    }
+    .productContainer .filterProduct{
+        justify-content: center
+    }
+    .sortingOptions{
+        flex-wrap: wrap;
+    }
+    .mobileSort{
+        display: block !important;
+        gap: 10px;
+    }
+    .productContainer .diamondsForever{
+        margin-top: 15px;
+    }
+    .diamondsForever h6{
+        width: 40%;
+    }
+}

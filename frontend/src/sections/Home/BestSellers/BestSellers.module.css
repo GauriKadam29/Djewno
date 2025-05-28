@@ -1,0 +1,48 @@
+.bestSellerSection{
+    padding-left: 40px;
+    /* padding: 0 40px;
+    width: 100%; */
+    /* padding: 0 40px; */
+    /* background-color: lightblue; */
+    /* border-bottom: 1px solid #f0f0f0; */
+    margin-bottom: 65px;
+    /* padding-bottom: 70px; */
+}
+
+
+
+
+.arrow {
+    position: absolute;
+    top: 30%;
+    /* transform: translateY(-50%); */
+    background: none;
+    border: none;
+    /* font-weight: 200; */
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prevArrow {
+    left: -40px;
+}
+
+.nextArrow {
+    right: 0;
+}
+
+/* .arrow:hover {
+    color: gray;
+} */
+
+
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .ourBest{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,123 @@
+
+
+.contact .contactContent{
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    padding: 40px;
+    /* padding-top: 20px; */
+    border-bottom: 1px solid #f0f0f0;
+    
+}
+.contact .contactContent .contactLeft, .contact .contactContent .contactRight{
+    width: 50%;
+}
+.contact .contactBanner img{
+    width: 100%;
+    height: 49vh;
+}
+.contactRight input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d5d3d3;
+
+}
+.contactLeft .ourStores{
+    margin-bottom: 50px;
+}
+.contactLeft .ourStores h3{
+    font-size: 21px;
+    padding-bottom: 5px;
+    /* font-weight: 700; */
+}
+.contactLeft .ourStores p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #212529;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+
+.contactLeft .storeLocations{
+    display: flex;
+    gap: 10%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+.contactLeft .storeLocations h5{
+    color: gray;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.contactLeft .storeLocations h4{
+    /* color: gray; */
+    font-size: 17px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    padding-bottom: 10px;
+}
+.contactRight{
+    padding-left: 7%;
+}
+.contactRight form{
+    padding: 20px 0;
+}
+.contactRight label{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contactRight textarea{
+    height: 120px;
+}
+.contactRight button{
+    background-color: #FF5940;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+.contactFacility{
+    display: flex;
+    gap: 9%;
+    padding:60px 40px;
+}
+.contactFacility span{
+    color: gray;
+    font-size: 30px;
+}
+.contactFacility h5{
+    font-size: 15px;
+    font-weight: 500;
+}
+.contactFacility p{
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .contact .contactContent{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .contact .contactContent .contactLeft, .contact .contactContent .contactRight{
+        width: 100%;
+    }
+    .contactLeft .storeLocations{
+        flex-direction: column;
+    }
+    .contactRight{
+        padding: 0;
+    }
+    .contactFacility{
+        flex-direction: column;
+        padding: 20px;
+    }
+}

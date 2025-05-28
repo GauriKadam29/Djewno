@@ -1,0 +1,39 @@
+.orderSuccess{
+    text-align: center;
+    height: 60vh;
+}
+.orderSuccess img{
+    /* width: 100%; */
+    height: 100%;
+    /* object-fit: cover; */
+}
+.orderSuccess p{
+    font-size: 20px;
+    padding: 0 25%;
+    /* font-weight: 700; */
+    /* color: #3BB150; */
+}
+.orderSuccess button{
+    padding: 10px 20px;
+    background-color: #343A40;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    /* .orderSuccess{
+        height: 30vh;
+    } */
+    .orderSuccess img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .orderSuccess p{
+        font-size: 15px;
+        padding: 0 20px;
+    }
+}

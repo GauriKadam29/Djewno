@@ -1,0 +1,177 @@
+/* .sidebar {
+    width: 29%;
+  
+    background-color: lightblue;
+    
+}
+
+.sidebar .filterSection {
+    margin-bottom: 20px;
+}
+
+.filterSection h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.priceInputs{
+    display: flex;
+}
+.priceInputs input {
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.sidebar .filterBtn {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.filterSection label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+} */
+
+
+.sidebar {
+    /* width: 308px; */
+    width: 28%;
+    padding-top: 4%;
+    /* height: 100%; */
+    /* background-color: lightblue; */
+    
+  }
+  
+  .filterSection {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+.filterSection  h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .priceInputs {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+  }
+  .priceInputs P{
+    font-size: 10px;
+    padding-bottom: 5px;
+    color: gray;
+  }
+  
+  .priceInputs div {
+    flex: 1;
+    /* margin-right: 10px; */
+  }
+  
+  .priceInputs input {
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+  }
+  
+  .priceFilter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .priceFilter p{
+    font-size: 14px;
+  }
+  .priceFilter button{
+    border: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 8px 20px;
+    background-color: #E9ECEF;
+  }
+  
+  .categoryRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  /* .categoryRow:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  } */
+  
+  .categoryRow label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .toggleIcon {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+    transition: 0.2s;
+  }
+  
+  .toggleIcon:hover {
+    color: #333;
+  }
+  
+  .subcategories {
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+    margin-left: 8px;
+  }
+  
+  .subcategories label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    padding: 3px 0;
+  }
+  
+  input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    accent-color: #FF5733; 
+
+  }
+ 
+  .gemstoneFilters label{
+    /* display: inline-block; */
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width:320px) and (max-width:480px) {
+    .sidebar{
+      display: none;
+    }
+  }

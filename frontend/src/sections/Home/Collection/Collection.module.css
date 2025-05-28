@@ -1,0 +1,123 @@
+.collection{
+    border-bottom: 1px solid #E9ECEF;
+
+}
+
+.collection .facility{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FBFBFC;
+    padding: 21px 0;
+    text-align: center;
+}
+.collection .facility p{
+    font-size: 12px;
+    color: #8B929A;
+}
+.collection .facility h5{
+    font-size: 14px;
+    color: #495057;
+    /* font-weight: 700; */
+}
+
+.collection .shopping{
+    display: flex;
+    padding: 0 40px;
+    gap: 25px;
+    height: 95vh;
+}
+.collection .shopping .shopLeft{
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('./../../../assets/banner-1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+    /* border: 1px solid; */
+}
+
+.collection .shopping .shopRight{
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)),  url('./../../../assets/banner-2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+    /* border: 1px solid; */
+}
+.collection .shopping .shopLeft h1, .collection .shopping .shopRight h1{
+    color: white;
+    font-weight: 500;
+}
+.collection .shopping .shopLeft p, .collection .shopping .shopRight p{
+    color: white;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.collection .shopping .shopLeft h6, .collection .shopping .shopRight h6{
+    color: white;
+    border-bottom: 1px solid white;
+    width: 16%;
+    text-align: center;
+    margin-left: 42%;
+    padding: 25px 0 5px;
+    font-size: 11px;
+}
+
+.collection .shopping .shopLeft img, .collection .shopping .shopRight img{
+    width: 100%;
+    height: 100%;
+}
+.collection .brands{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+.collection .brands img{
+    width: 120px;
+    height: 70px;
+
+}
+.hideOnMobile {
+    display: inline;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .hideOnMobile {
+        display: none;
+    }
+    .collection .shopping{
+        flex-direction: column;
+        padding: 0 20px;
+        height: auto;
+        /* gap: 0; */
+    }
+    .collection .shopping .shopLeft, .collection .shopping .shopRight{
+        width: 100%;
+        height: 60vh;
+    }
+    .collection .brands{
+        flex-wrap: wrap;
+    }
+    .collection .brands img{
+        width: 80px;
+        height: 50px;
+        /* position: relative;
+        z-index: 2000; */
+    
+    }
+    .collection .shopping .shopLeft h1, .collection .shopping .shopRight h1{
+        font-size: 22px;
+    }
+    .collection .shopping .shopLeft p, .collection .shopping .shopRight p{
+        font-size: 12px;
+    }
+    .collection .shopping .shopLeft h6, .collection .shopping .shopRight h6{
+        width: 30%;
+        margin-left: 35%;
+    }
+}
