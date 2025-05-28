@@ -15,6 +15,7 @@ const allowedOrigins = [
   "http://localhost:3000", // frontend
   "http://localhost:3001", // admin panel
   "http://localhost:5173", // (if you use Vite or other dev server)
+  "https://effortless-smakager-24ba14.netlify.app/", // production frontend URL
 ];
 
 app.use(cors({
